@@ -1,0 +1,207 @@
+@media screen and (max-width: 991px) {
+  .cartBox {
+    margin-right: 80px;
+  }
+  .logoName {
+    font-size: 30px;
+  }
+  .navbar_container .me-auto {
+    margin: 10vw 0;
+    padding: 0px 40px;
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    list-style: none;
+  }
+  .navbar_container .nav-link {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px !important;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    background: url("./assets/mobile/cross.png") no-repeat center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    transition: all 0.3s ease-in-out;
+  }
+  button.navbar-toggler.collapsed {
+    background: url("./assets/mobile/hamburger\ menu.png") no-repeat center;
+    background-size: cover;
+  }
+  .navbar-toggler span {
+    display: none;
+  }
+  .navbar-collapse {
+    height: 280vw;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .bannerText_area h1 {
+    font-size: 80px;
+  }
+
+  .formContainer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter {
+    text-align: center;
+  }
+  .contactForm {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .getIn_Touch h1 {
+    font-size: 80px;
+  }
+  .contactForm .form-control {
+    width: 100%;
+  }
+  .contactForm button {
+    top: 154%;
+    left: 80%;
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+  }
+  .product_Category {
+    flex-direction: column;
+    margin: 20px 0px;
+    height: 100%;
+  }
+  ul.categoryTabs {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  ul.categoryTabs li {
+    width: fit-content;
+  }
+  li button.nav-link.active {
+    font-size: 18px;
+  }
+  .tab-content {
+    max-width: 100%;
+  }
+  .products {
+    padding: 45px 0px;
+  }
+  .sliderArrow {
+    position: absolute;
+    top: 100%;
+    cursor: pointer;
+  }
+  .sliderArrow.nextArrow {
+    right: 30%;
+  }
+  .sliderArrow.prevArrow {
+    right: unset !important;
+    left: 30%;
+  }
+  .model_ProductDetail {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cartBox {
+    margin-right: 80px;
+    display: none;
+  }
+  .bannerBgStar {
+    position: relative;
+    width: 273px;
+    height: 340px;
+  }
+  .bannerText_area {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+  }
+  .bannerProduct_img .mobileModelImg {
+    display: block;
+    width: 275px;
+    height: 599.295px;
+    object-fit: contain;
+  }
+  .bannerProduct_img .modelImg {
+    display: none;
+  }
+  .bannerOverlay,
+  .bannerOverlay2 {
+    height: 324.194px;
+  }
+  .bannerProduct_img {
+    position: absolute;
+    right: -3%;
+    top: 3%;
+  }
+  .bannerText_area h1 {
+    font-size: 55px;
+  }
+  .products h2 {
+    color: #000;
+    font-family: Syne;
+    font-size: 40px;
+  }
+  .titleUnderline {
+    width: 100%;
+  }
+  li button.nav-link {
+    font-size: 14px;
+    padding: 0px !important;
+  }
+  .getIn_Touch h1 {
+    font-size: 80px;
+    font-size: 55px;
+    line-height: 70%;
+    white-space: pre-wrap;
+  }
+  .contactForm button {
+    top: 110%;
+    left: 80%;
+  }
+  .bannerText1 {
+    top: 74%;
+  }
+  .bannerText_area .outlined_text {
+    top: 88%;
+  }
+  .bannerText2 {
+    position: absolute;
+    top: 104%;
+  }
+  .bannerBgStar .bigStar {
+    display: none;
+  }
+
+  .bannerBgStar .mobileBigStar {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .landing_container {
+    width: 100%;
+    height: 720px;
+    position: relative;
+  }
+  .followUs {
+    display: none;
+  }
+  .seeMore {
+    position: absolute;
+    top: 155%;
+  }
+}

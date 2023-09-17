@@ -84,7 +84,7 @@ const ProductList = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2, // Adjust the number of slides for smaller screens
         },
@@ -150,7 +150,10 @@ const ProductList = () => {
                                 </a>
                               </div>
                               <div className="product_caption">
-                                <h3 className="productTitle">
+                                <h3
+                                  className="productTitle"
+                                  title={product.title}
+                                >
                                   {product.title}
                                 </h3>
                                 <p className="productDescp">

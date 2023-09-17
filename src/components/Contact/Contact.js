@@ -1,5 +1,6 @@
-// src/components/ContactUs.js
 import React, { useState } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const ContactUs = () => {
   // Implement form validation and rendering here
@@ -23,46 +24,51 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contacts">
-      <div className="container">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+    <>
+      <div className="contact_section">
+        <div className="container">
+          <div className="contactPage">
+            <div className="formContainer">
+              <div className="newsletter">
+                <h3>Newslleter</h3>
+                <p>Get news about articles and updates in your inbox.</p>
+              </div>
+              <Form className="contactForm" onSubmit={handleSubmit}>
+                <Form.Control
+                  type="text"
+                  placeholder="NAME"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <Form.Control
+                  type="email"
+                  placeholder="EMAIL"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <Form.Control
+                  type="text"
+                  placeholder="MESSAGE"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+                <Button variant="primary" type="submit">
+                  SEND
+                </Button>
+              </Form>
+            </div>
+            <div className="getIn_Touch">
+              <h1>GET</h1>
+              <h1>IN TOUCH</h1>
+            </div>
           </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+        </div>
       </div>
-    </div>
+      <div className="copyright">Copyright 2022 All Right Reserved By SG</div>
+    </>
   );
 };
 

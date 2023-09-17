@@ -3,6 +3,8 @@ import bigStar from "../../assets/desktop/Star 3.png";
 import modelImg from "../../assets/desktop/jessica-radanavong-IchPBHFD0pw-unsplash.png";
 import big_lineStar from "../../assets/desktop/Star 4.png";
 import upArrow from "../../assets/desktop/Vector (3).png";
+import mobileModelImg from "../../assets/mobile/jessica-radanavong-IchPBHFD0pw-unsplash.png";
+import mobileBigStar from "../../assets/mobile/Star 3.png";
 
 const Banner = () => {
   return (
@@ -20,10 +22,20 @@ const Banner = () => {
             <h1 className="bannerText2">Look</h1>
           </div>
           <div className="bannerBgStar">
-            <img src={bigStar} alt="bigStar" />
+            <img className="bigStar" src={bigStar} alt="bigStar" />
+            <img
+              className="mobileBigStar"
+              src={mobileBigStar}
+              alt="mobileBigStar"
+            />
           </div>
           <div className="bannerProduct_img">
-            <img src={modelImg} alt="modelImg" />
+            <img className="modelImg" src={modelImg} alt="modelImg" />
+            <img
+              className="mobileModelImg"
+              src={mobileModelImg}
+              alt="mobileModelImg"
+            />
             <div className="model_ProductDetail">
               <p>Oregon jacket</p>
               <p>$124</p>

@@ -6,11 +6,12 @@
   -webkit-font-smoothing: antialiased; /* For Safari, Chrome, and newer Firefox */
   -moz-osx-font-smoothing: grayscale;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   font-family: "Syne", sans-serif;
   font-family: "Work Sans", sans-serif;
-  background: #1a1a1a;
+  background: #0f0f0f;
   color: #fff;
 }
 

@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import midLine_Star from "../../assets/desktop/Star 1.png";
+// import Header from "./Header";
 
 const NavbarLogo = ({ menuItems }) => {
   return (
@@ -20,9 +21,12 @@ const NavbarLogo = ({ menuItems }) => {
             <div className="midline"></div>
             <img src={midLine_Star} alt="star" className="line_star" />
           </div>
-          <Navbar expand="lg" className="navbar">
+          <Navbar expand="lg" className="navbar" variant="dark" Offcanvas>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
+              {/* <div className="mobileSection">
+                <div className="banner_Bg"></div>
+              </div> */}
               <Nav className="me-auto">
                 {menuItems.map((item) => (
                   <React.Fragment key={item.id}>
