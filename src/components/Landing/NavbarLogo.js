@@ -21,7 +21,7 @@ const NavbarLogo = ({ menuItems }) => {
             <div className="midline"></div>
             <img src={midLine_Star} alt="star" className="line_star" />
           </div>
-          <Navbar expand="lg" className="navbar" variant="dark" Offcanvas>
+          <Navbar expand="lg" className="navbar" variant="dark">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               {/* <div className="mobileSection">
